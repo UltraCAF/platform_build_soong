@@ -90,6 +90,10 @@ type variableProperties struct {
 			Cflags []string
 		}
 
+		Uses_media_extensions struct {
+			Cflags []string
+		}
+
 		// include AOSP variables
 		Aosp android.Product_variables
 
@@ -161,6 +165,7 @@ type productVariables struct {
 	BoardUsesQTIHardware *bool `json:",omitempty"`
 
 	Has_legacy_camera_hal1     *bool `json:",omitempty"`
+	Uses_media_extensions      *bool `json:",omitempty"`
 
 	// include AOSP variables
 	Aosp android.ProductVariables
