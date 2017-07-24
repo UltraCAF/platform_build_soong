@@ -86,8 +86,13 @@ type variableProperties struct {
 			Cppflags []string
 		}
 
+		Has_legacy_camera_hal1 struct {
+			Cflags []string
+		}
+
 		// include AOSP variables
 		Aosp android.Product_variables
+
 	} `android:"arch_variant"`
 }
 
@@ -154,6 +159,8 @@ type productVariables struct {
 
 	Override_rs_driver *string `json:",omitempty"`
 	BoardUsesQTIHardware *bool `json:",omitempty"`
+
+	Has_legacy_camera_hal1     *bool `json:",omitempty"`
 
 	// include AOSP variables
 	Aosp android.ProductVariables
