@@ -239,7 +239,6 @@ type builderFlags struct {
 	aidlFlags   string
 	toolchain   config.Toolchain
 	clang       bool
-	sdclang     bool
 	tidy        bool
 	coverage    bool
 	sAbiDump    bool
