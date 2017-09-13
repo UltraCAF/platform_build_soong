@@ -100,6 +100,7 @@ type variableProperties struct {
 
 		// include AOSP variables
 		Aosp android.Product_variables
+		Qualcomm android_lineage.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -175,6 +176,7 @@ type productVariables struct {
 
 	// include AOSP variables
 	Aosp android.ProductVariables
+	Qualcomm android_lineage.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
