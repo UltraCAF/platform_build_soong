@@ -85,6 +85,9 @@ type variableProperties struct {
 			Cflags   []string
 			Cppflags []string
 		}
+
+		// include AOSP variables
+		Aosp android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -151,6 +154,9 @@ type productVariables struct {
 
 	Override_rs_driver *string `json:",omitempty"`
 	BoardUsesQTIHardware *bool `json:",omitempty"`
+
+	// include AOSP variables
+	Aosp android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
